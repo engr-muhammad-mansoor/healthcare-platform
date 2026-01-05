@@ -1,0 +1,58 @@
+management.endpoint.health.show-details=ALWAYS
+#swagger
+springdoc.show-actuator=true
+springdoc.api-docs.groups.enabled=true
+springdoc.swagger-ui.disable-swagger-default-url=true
+springdoc.version=@project.version@
+spring.main.allow-bean-definition-overriding=true
+management.endpoint.health.probes.enabled=true
+management.health.livenessState.enabled=true
+management.health.readinessState.enabled=true
+#mongo
+health.mongo.host=localhost
+health.mongo.port=27017
+health.mongo.username=
+health.mongo.password=
+health.mongo.db=test
+spring.data.mongodb.uri=mongodb://localhost:27017/test
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+# OAuth2 Configuration
+# Replace with your own OAuth client IDs and secrets
+spring.security.oauth2.client.registration.google.client-id=your_google_client_id
+spring.security.oauth2.client.registration.google.client-secret=your_google_client_secret
+spring.security.oauth2.client.registration.facebook.client-id=your_facebook_client_id
+spring.security.oauth2.client.registration.facebook.client-secret=your_facebook_client_secret
+spring.social.facebook.appSecret=your_facebook_app_secret
+spring.social.facebook.appId=your_facebook_app_id
+
+# File Upload Configuration
+spring.servlet.multipart.max-file-size=256MB
+spring.servlet.multipart.max-request-size=256MB
+spring.servlet.multipart.enabled=true
+
+# JWT Configuration
+# Replace with a strong secret key for production
+wellink.app.jwtCookieName=wellink
+wellink.app.jwtSecret=your_jwt_secret_key_minimum_64_characters
+wellink.app.jwtExpirationMs=86400000
+
+# Database Migration
+mongock.change-logs-scan-package=com.healthcare.uman.config.changelogs
+
+# Stripe Configuration
+# Replace with your Stripe API keys
+stripe.secretKey=your_stripe_secret_key
+stripe.publicKey=your_stripe_public_key
+
+# Email Configuration
+# Replace with your SMTP server details
+spring.mail.host=your_smtp_host
+spring.mail.port=587
+spring.mail.username=your_email
+spring.mail.password=your_email_password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.ssl.enable=true
+
