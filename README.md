@@ -150,8 +150,8 @@ spring.servlet.multipart.enabled=true
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd health
+   git clone https://github.com/engr-muhammad-mansoor/healthcare-platform.git
+   cd healthcare-platform
    ```
 
 2. **Set up databases**
